@@ -23,18 +23,18 @@ async function getPopMovies() {
             }
 
             popMovieContainer.innerHTML +=
-                `<div class="new-films">
-                <a href="#"><div class="film-container">
+                `<a href="purchase-movie.html?id=${data[i].id}">
+                <div class="new-films">
                 <img src="${imageContainer}" alt="${nameContainer}" class="new-image"/>
 			    <h3 class="title">${nameContainer}</h3>
-                </div></a>
+                </div>
 		        </div>
                 </a>`;
         }
 
     } catch (error) {
         console.log("Something went wrong when calling the API.")
-        popMovieContainer.innerHTML = `<h1 class="details-name">Ops, something went wrong.</h1>`;
+        popMovieContainer.innerHTML = `<h1 class="details-name">Can't load titles. Please try again later.</h1>`;
     }
 }
 

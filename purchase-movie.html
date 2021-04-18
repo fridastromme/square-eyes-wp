@@ -31,38 +31,25 @@
 			</ul>
 		</nav>
 	</header>
-  <main id="content">
-	<section id="watchmovie">
-		<div id="watchmovie__featured">
-			<div class="container__featured">
-				<a href="movieinfo-home.html"><img alt="Woman and child sitting in a lake, laughing together" class="featured__container-image" src="images/of-the-forest-1.jpg"></a>
-			</div>
+  <main id="content-purchase">
+	<div id="watchmovie"></div>
+	<div id="watchmovie__form">
+		<h2>Enter your credit card's security code to purchase</h2>
+		<p>You're logged in as <a class="link" href="#">Kate Mourey.</a></p>
+		<p>Not you? <a href="#" id="watchmovie__change">Log in on a different account.</a></p>
+		<form id="watchmovie__inputform" name="watchmovie__inputform">
+		<div class="watchmovie__input">
+			<label for="cvv">Credit card security code:</label>
+			<p class="form-comment">Must be 3 digits.</p><input id="cvv" name="number" type="number">
+				<div class="form-error-2" id="cvvError">
+				Please enter a valid code.
+				</div>
 		</div>
-		<div id="watchmovie__pay">
-			<div id="watchmovie__titles">
-				<h1>Purchase movie:</h1>
-				<h2>Of the Forest</h2>
-				<h3>By Lucy Thompson</h3>
-				<h4>Price per view: <span class="movie-info__price"></span></h4>
-				<span class="movie-info__price"><h5>$3</h5></span></span>
-			</div>
-			<div id="watchmovie__form">
-				<h2>Enter your credit card's security code to purchase</h2>
-				<p>You're logged in as <a class="link" href="#">Kate Mourey.</a></p>
-				<p>Not you? <a href="#" id="watchmovie__change">Log in on a different account.</a></p>
-				<form id="watchmovie__inputform" name="watchmovie__inputform">
-					<div class="watchmovie__input">
-						<label for="cvv">Credit card security code:</label>
-						<p class="form-comment">Must be 3 digits.</p><input id="cvv" name="number" type="number">
-						<div class="form-error-2" id="cvvError">
-							Please enter a valid code.
-						</div>
-					</div><button class="submit-3">Purchase</button>
-				</form>
-			</div>
-		</div>
-	</section>
-  </main>
+		<button class="submit-3">Purchase</button>
+		</form>
+	</div>
+</div>
+</main>
 	<footer>
 		<nav>
 			<div style="margin-left: 2em">
@@ -179,7 +166,7 @@
 			</div>
 		</nav>
 	</footer>
-	<script src="js/securityCode.js">
-	</script>
+	<script src="js/securityCode.js"></script>
+	<script src="js/movieDetails.js"></script> 
 </body>
 </html>

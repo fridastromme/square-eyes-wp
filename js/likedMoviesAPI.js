@@ -32,7 +32,7 @@ async function getLikedMovies() {
 
     } catch (error) {
         console.log("Something went wrong when calling the API.")
-        likedMovieContainer.innerHTML = `<h1 class="details-name">Ops, something went wrong.</h1>`;
+        likedMovieContainer.innerHTML = `<h1 class="details-name">Can't load titles. Please try again later.</h1>`;
     }
 }
 

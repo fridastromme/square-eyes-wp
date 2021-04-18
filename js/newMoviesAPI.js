@@ -16,7 +16,6 @@ async function getNewMovies() {
         for (let i = 0; i < data.length; i++) {
             const nameContainer = data[i].name;
 
-            // imageContainer henter fra en array inni en array, så du trenger å legge til [0]:
             const imageContainer = data[i].images[0].src;
 
             if ((window.location.pathname === '/viewer-profile.html') || (window.location.pathname === '/producer-profile.html')  && (i === 3)) {
@@ -24,18 +23,18 @@ async function getNewMovies() {
             }
 
             newMovieContainer.innerHTML +=
-                `<div class="new-films">
-                <a href="#"><div class="film-container">
+                `<a href="purchase-movie.html?id=${data[i].id}">
+                <div class="new-films">
                 <img src="${imageContainer}" alt="${nameContainer}" class="new-image"/>
 			    <h3 class="title">${nameContainer}</h3>
-                </div></a>
+                </div>
 		        </div>
                 </a>`;
         }
 
     } catch (error) {
         console.log("Something went wrong when calling the API.")
-        newMovieContainer.innerHTML = `<h1 class="details-name">Ops, something went wrong.</h1>`;
+        newMovieContainer.innerHTML = `<h1 class="details-name">Can't load titles. Please try again later.</h1>`;
     }
 }
 
