@@ -2,13 +2,9 @@
 // New titles-category:
 const newUrl = "https://mageknip.no/wp-json/wc/store/products?category=17";
 
-// Popular titles-category:
-const popUrl = "https://mageknip.no/wp-json/wc/store/products?category=16";
-
 const newMovieContainer = document.querySelector(".new");
-const popMovieContainer = document.querySelector(".pop")
 
-async function getMovies() {
+async function getNewMovies() {
 
     try {
         const response = await fetch(newUrl);
@@ -40,4 +36,4 @@ async function getMovies() {
     }
 }
 
-getMovies()
+getNewMovies()

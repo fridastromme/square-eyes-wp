@@ -463,7 +463,6 @@ footer > nav li {
 	grid-template-areas: 'news news news news' 'new-1 new-2 new-3 new-4';
 	margin: auto;
 	grid-gap: 1rem;
-	margin-bottom: 2rem;
 }
 
 .film-container {
@@ -1984,7 +1983,8 @@ submit:hover {
 		width: 15%;
 	}
 
-	.new {
+	.new,
+	.pop {
 		display: grid;
 		margin: auto;
 		grid-template-areas: 'news' 'new-1' 'new-2' 'new-3' 'new-4';
