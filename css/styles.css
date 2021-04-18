@@ -437,6 +437,28 @@ footer > nav li {
 
 /* New titles */
 
+/* Loader */
+
+.loader {
+	border: 6px solid white;
+	border-top: 6px solid #373737;
+	border-right: 6px solid #373737;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .new-titles {
 	position: relative;
 	padding-top: 1rem;
