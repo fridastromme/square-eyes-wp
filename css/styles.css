@@ -455,12 +455,14 @@ footer > nav li {
 	margin-bottom: 10px;
 }
 
-.new {
+.new,
+.pop {
 	display: grid;
 	max-width: 80%;
 	padding: 0px;
 	grid-template-areas: 'news news news news' 'new-1 new-2 new-3 new-4';
 	margin: auto;
+	grid-gap: 1rem;
 	margin-bottom: 2rem;
 }
 
@@ -481,7 +483,6 @@ footer > nav li {
 	color: white;
 	font-size: 1.3rem;
 	text-shadow: 0px 5px 15px #000000;
-	margin-bottom: 2px;
 }
 
 .title:hover {
@@ -489,8 +490,7 @@ footer > nav li {
 	color: #ffa987;
 }
 
-.title:hover,
-.creator:hover {
+.title:hover {
 	color: #ffa987;
 }
 
