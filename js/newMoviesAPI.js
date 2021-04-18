@@ -19,12 +19,15 @@ async function getNewMovies() {
             // imageContainer henter fra en array inni en array, så du trenger å legge til [0]:
             const imageContainer = data[i].images[0].src;
 
+            if ((window.location.pathname === '/viewer-profile.html') || (window.location.pathname === '/producer-profile.html')  && (i === 3)) {
+                break;
+            }
 
             newMovieContainer.innerHTML +=
                 `<div class="new-films">
                 <a href="#"><div class="film-container">
                 <img src="${imageContainer}" alt="${nameContainer}" class="new-image"/>
-			    <h2 class="title">${nameContainer}</h2>
+			    <h3 class="title">${nameContainer}</h3>
                 </div></a>
 		        </div>
                 </a>`;

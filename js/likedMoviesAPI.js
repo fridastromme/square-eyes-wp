@@ -1,28 +1,26 @@
 // Popular titles-category:
-const popUrl = "https://mageknip.no/wp-json/wc/store/products?category=16";
+const likedUrl = "https://mageknip.no/wp-json/wc/store/products?category=16";
 
-const popMovieContainer = document.querySelector(".pop")
+const likedMovieContainer = document.querySelector(".liked");
 
-async function getPopMovies() {
+async function getLikedMovies() {
 
     try {
-        const response = await fetch(popUrl);
+        const response = await fetch(likedUrl);
         const data = await response.json();
         console.log(data);
 
-        popMovieContainer.innerHTML = "";
+        likedMovieContainer.innerHTML = "";
 
         for (let i = 0; i < data.length; i++) {
             const nameContainer = data[i].name;
-
-            // imageContainer henter fra en array inni en array, så du trenger å legge til [0]:
             const imageContainer = data[i].images[0].src;
 
-            if ((window.location.pathname === '/viewer-profile.html') && (i === 3)) {
-                break;
+            if (i === 1) {
+                break
             }
 
-            popMovieContainer.innerHTML +=
+            likedMovieContainer.innerHTML +=
                 `<div class="new-films">
                 <a href="#"><div class="film-container">
                 <img src="${imageContainer}" alt="${nameContainer}" class="new-image"/>
@@ -34,8 +32,8 @@ async function getPopMovies() {
 
     } catch (error) {
         console.log("Something went wrong when calling the API.")
-        popMovieContainer.innerHTML = `<h1 class="details-name">Ops, something went wrong.</h1>`;
+        likedMovieContainer.innerHTML = `<h1 class="details-name">Ops, something went wrong.</h1>`;
     }
 }
 
-getPopMovies()
+getLikedMovies()

@@ -487,6 +487,15 @@ footer > nav li {
 	grid-gap: 1rem;
 }
 
+#view-back .new,
+#view-back .pop,
+#prod-back .new,
+#prod-back .pop {
+	display: grid;
+	grid-template-areas: 'news' 'news' 'news' 'news';
+	max-width: none;
+}
+
 .film-container {
 	display: inline-block;
 	width: 90%;
@@ -1331,7 +1340,6 @@ input[type='checkbox'] + label {
 	grid-row-gap: 1em;
 	grid-auto-rows: minmax(100px, auto);
 	grid-template-columns: 3fr 1.5fr 1.5fr 2fr;
-	grid-template-rows: 3fr 2fr 1fr;
 }
 
 .prod-profile {
