@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Square Eyes | Sign in</title>
-	<meta charset="UTF-8">
-	<meta content="Sign in to your account on Square Eyes." name="description">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link href="css/styles.css" rel="stylesheet">
-</head>
-<body class="whoareyou">
-	<header class="sign-up__header">
-        <div class="skip"><a href="#content">Skip to Main Content</a></div>
-		<a href="index.html"><img alt="Website logo" class="logo" src="images/logo-white.png"></a>
-	</header>
-    <main id="content">
-	<div class="overlay-box__whoareyou signin">
-		<div class="sign-up__back">
-			<a href="javascript:history.back()" id="back">Go back</a>
-		</div>
-		<div class="whoareyou__text">
-			<h1>Sign in</h1>
-			<div>
-				<label>Your e-mail</label> <input id="email" name="email" type="email">
-			</div>
-			<div>
-				<label>Your password</label> <input id="password" name="password" type="password">
-				<div class="form-error" id="passwordError">
-					Wrong email or password. Please try again.
+	<head>
+		<title>Square Eyes | Sign in</title>
+		<meta
+			name="description"
+			content="Sign in to your account on Square Eyes."
+		/>
+		<meta charset="UTF-8" />
+		<meta
+			content="Sign in to your account on Square Eyes."
+			name="description"
+		/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<link href="css/styles.css" rel="stylesheet" />
+	</head>
+	<body class="whoareyou">
+		<header class="sign-up__header">
+			<div class="skip"><a href="#content">Skip to Main Content</a></div>
+			<a href="index.html"
+				><img alt="Website logo" class="logo" src="images/logo-white.png"
+			/></a>
+		</header>
+		<main id="content">
+			<div class="overlay-box__whoareyou signin">
+				<div class="sign-up__back">
+					<a href="javascript:history.back()" id="back">Go back</a>
+				</div>
+				<div class="whoareyou__text">
+					<h1>Sign in</h1>
+					<div>
+						<label>Your e-mail</label>
+						<input id="email" name="email" type="email" />
+					</div>
+					<div>
+						<label>Your password</label>
+						<input id="password" name="password" type="password" />
+						<div class="form-error" id="passwordError">
+							Wrong email or password. Please try again.
+						</div>
+					</div>
+				</div>
+				<button class="submit-2">Sign in</button>
+				<div class="signin-forgot">
+					<a class="sign-up__terms" href="#">Forgot your password?</a>
+					<p></p>
 				</div>
 			</div>
-		</div><button class="submit-2">Sign in</button>
-		<div class="signin-forgot">
-			<a class="sign-up__terms" href="#">Forgot your password?</a>
-			<p></p>
-		</div>
-	</div>
-	<script src="js/sign-in.js">
-	</script>
-    </main>
-</body>
+			<script src="js/sign-in.js"></script>
+		</main>
+	</body>
 </html>
