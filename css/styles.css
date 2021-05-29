@@ -522,7 +522,6 @@ footer > nav li {
 .new,
 .pop {
 	display: grid;
-	max-width: 80%;
 	padding: 0px;
 	grid-template-areas: 'news news news news' 'new-1 new-2 new-3 new-4';
 	grid-gap: 1rem;
@@ -1867,7 +1866,7 @@ input[type='checkbox'] + label {
 	margin-bottom: 40px;
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
-	grid-template-columns: 3fr 1.5fr 1.5fr 2fr;
+	grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr;
 }
 
 .view-profile > ul {
@@ -1893,7 +1892,7 @@ input[type='checkbox'] + label {
 
 .view-profile {
 	margin-top: 60px;
-	padding: 100px;
+	padding: 10%;
 	grid-column: 1/2;
 	border-radius: 50px 50px 10px 50px !important;
 }
@@ -2279,8 +2278,9 @@ submit:hover {
 	}
 
 	.view-profile {
+		margin-top: 130px;
 		grid-column: 1/5;
-		grid-row: 2/3;
+		grid-row: 1/2;
 		border-radius: 50px 50px 10px 10px !important;
 	}
 
