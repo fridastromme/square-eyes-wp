@@ -389,6 +389,10 @@ footer > nav li {
 	overflow: hidden;
 }
 
+.container__featured:hover {
+	cursor: pointer;
+}
+
 .featured__container-image {
 	overflow: hidden;
 	min-width: 100vw;
@@ -425,14 +429,90 @@ footer > nav li {
 	font-size: 2rem;
 }
 
+.featured__headings p {
+	color: white;
+}
+
 .featured__headings h2 {
 	font-size: 2rem;
 }
 
-.featured__headings h1:hover,
-.featured__headings h2:hover,
-.featured__headings h3:hover {
-	color: #ffa987;
+.modal {
+	position: fixed;
+	left: 0;
+	display: none;
+	max-width: 500px;
+	margin-top: 22px;
+	margin-left: 20px;
+	margin-right: 20px;
+	z-index: 110;
+	background-color: #373837;
+	width: 40%;
+	border-radius: 50px;
+	filter: drop-shadow(0px 3px 10px #292929);
+}
+
+.info__modal-content {
+	width: 75%;
+	margin: auto;
+}
+
+.info__modal-content > .light-red {
+	position: absolute;
+	right: 2rem;
+	bottom: 2rem;
+}
+
+.info__modal-content p {
+	color: white;
+	margin-bottom: 1.8rem;
+}
+
+.modal__image {
+	position: relative;
+	bottom: 3.3rem;
+	width: 100%;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.modal__title,
+.modal__creator p,
+.modal__price {
+	color: white;
+}
+
+.modal__price {
+	margin-bottom: 3rem;
+}
+
+.modal__creator p {
+	font-size: 1.2rem;
+	font-weight: 200;
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.modal__line {
+	border: none;
+	border-top: 3px solid white;
+	position: relative;
+	bottom: 14px;
+}
+
+.close {
+	position: relative;
+	max-width: 3rem;
+	left: 85%;
+	top: 1rem;
+	z-index: 200;
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+.close:hover {
+	opacity: 0.5;
 }
 
 /* New titles */
@@ -517,6 +597,10 @@ footer > nav li {
 	grid-gap: 1rem;
 }
 
+.new-films {
+	white-space: normal;
+}
+
 #view-back .new,
 #view-back .pop,
 #prod-back .new,
@@ -539,10 +623,12 @@ footer > nav li {
 .title {
 	position: relative;
 	bottom: 4rem;
-	left: 0.7rem;
 	color: white;
 	font-size: 1.3rem;
 	text-shadow: 0px 5px 15px #000000;
+	z-index: 200;
+	max-width: fit-content;
+	padding: 0rem 1rem 1rem 1rem;
 }
 
 .title:hover {
@@ -631,9 +717,7 @@ footer > nav li {
 }
 
 .movie-info__container {
-	position: relative;
-	width: 75%;
-	margin: 0 auto;
+	display: none;
 }
 
 .movie-info__featured > .light-red {
@@ -660,13 +744,6 @@ footer > nav li {
 .movie-info__creator {
 	font-size: 1.2rem;
 	margin-bottom: 30px;
-}
-
-.movie-info__line {
-	border: none;
-	border-top: 3px solid white;
-	position: relative;
-	bottom: 14px;
 }
 
 .movie-info__year {
@@ -2061,6 +2138,12 @@ submit:hover {
 		width: 15%;
 	}
 
+	.info__modal .light-red {
+		right: 2rem;
+		bottom: 1.5rem;
+		padding: 0.5rem 1rem 0.5rem 1rem;
+	}
+
 	.new,
 	.pop {
 		display: grid;
@@ -2137,6 +2220,15 @@ submit:hover {
 		padding: 45px;
 	}
 
+	.modal {
+		width: fit-content;
+		margin-left: 20px;
+	}
+
+	.modal__price {
+		margin-bottom: 4.5rem;
+	}
+
 	.hide {
 		display: block;
 	}
@@ -2154,9 +2246,10 @@ submit:hover {
 		margin-bottom: 0.8rem;
 	}
 
-	.featured__container-image {
+	.featured__container-image img {
 		position: relative;
 		right: 20rem;
+		width: 100%;
 	}
 
 	.featured__headings h2 {
