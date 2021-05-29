@@ -1525,6 +1525,16 @@ input[type='checkbox'] + label {
 	color: #134196 !important;
 }
 
+.red {
+	border: 3px solid #ff5d1c;
+	background-color: #ff5d1c;
+}
+
+.red:hover {
+	border-color: #ff5d1c;
+	color: #ff5d1c !important;
+}
+
 .li-button {
 	text-align: center;
 }
