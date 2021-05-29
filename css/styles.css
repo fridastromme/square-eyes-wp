@@ -1664,6 +1664,8 @@ input[type='checkbox'] + label {
 .settings > h2 {
 	text-align: center;
 	margin-bottom: 15px;
+	font-size: 1.5rem;
+	font-weight: normal;
 }
 
 #prod-back {
@@ -1888,6 +1890,8 @@ input[type='checkbox'] + label {
 .view-discussion > h2 {
 	text-align: center;
 	margin-bottom: 15px;
+	font-size: 1.5rem;
+	font-weight: normal;
 }
 
 .view-profile {
