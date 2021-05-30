@@ -394,7 +394,7 @@ footer > nav li {
 
 .overlay-box__signup .button {
 	display: inline-block;
-	margin: 0.3rem 1.5rem 0rem 0rem;
+	margin: auto;
 }
 
 .container__featured {
@@ -780,11 +780,12 @@ footer > nav li {
 }
 
 .whoareyou__buttons {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr;
 	text-align: center;
-}
-
-.whoareyou__text .round {
-	margin: 0rem 1rem 0rem 1rem;
 }
 
 /* Sign in page */
@@ -2352,6 +2353,10 @@ submit:hover {
 	.overlay-box__signup p {
 		font-size: 0.9rem;
 		margin-bottom: 0.8rem;
+	}
+
+	.whoareyou__buttons {
+		grid-template-columns: 1fr;
 	}
 
 	.featured__container-image img {
