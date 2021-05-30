@@ -85,6 +85,7 @@ a:not(.button):hover {
 
 .active {
 	color: #d63d00;
+	font-weight: bolder;
 }
 
 li {
@@ -94,7 +95,7 @@ li {
 nav li {
 	margin-top: 20px;
 	display: inline-block;
-	font-weight: bold;
+	font-weight: normal;
 	padding: 2px 0;
 	margin-right: 40px;
 }
@@ -2302,7 +2303,6 @@ submit:hover {
 	nav li {
 		margin-top: 0px;
 		display: inline-block;
-		font-weight: bold;
 		padding: 0;
 		margin-right: 40px;
 	}
