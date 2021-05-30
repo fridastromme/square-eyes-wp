@@ -106,7 +106,6 @@ header label {
 #search {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	display: inline-block;
-	width: 60%;
 	height: 30px;
 	background-color: #ffa987;
 	border: none;
@@ -115,32 +114,50 @@ header label {
 	margin-right: 0.3rem;
 }
 
+.search-hide {
+	position: absolute;
+	bottom: 1000px;
+}
+
 #search:focus {
 	outline: none;
 	background-color: #ffc3ac;
 }
 
-.movie-page__background #search {
-	width: 10%;
-}
-
 .watch #search {
-	width: 10%;
+	max-width: 200px;
 }
 
-.icon__search {
+.search-container {
+	height: fit-content;
+}
+
+.search-container a {
 	position: relative;
-	top: 14px;
+	top: 0.9rem;
+	left: 0rem;
 	display: inline-block;
-	background-image: url('/images/search-icon.png');
+	background-image: url(/images/search-icon.png);
 	background-repeat: no-repeat;
 	width: 30px;
 	height: 30px;
-	margin-right: 2rem;
 }
 
-.icon__search:hover {
+.search-container a:hover {
 	background-image: url('/images/search-icon-red.png');
+	animation: search-zoom-in 1s ease;
+}
+
+@keyframes search-zoom-in {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 /* Buttons */
@@ -384,8 +401,25 @@ footer > nav li {
 	overflow: hidden;
 }
 
-.container__featured:hover {
+.container__featured {
 	cursor: pointer;
+}
+
+.featured__section .container__featured:hover {
+	cursor: pointer;
+	animation: featured-zoom-in 2s ease;
+}
+
+@keyframes featured-zoom-in {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.03);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .featured__container-image {
@@ -695,130 +729,6 @@ footer > nav li {
 	opacity: 0.5;
 }
 
-/* .movie-info__featured {
-	position: absolute;
-	max-width: 500px;
-	background-color: #373837;
-	filter: drop-shadow(0px 3px 10px #292929);
-	padding-top: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-top: 20px;
-	padding-bottom: 70px;
-	margin-left: 30px;
-	margin-right: 30px;
-	left: 0px;
-	border-radius: 50px 50px 50px 10px;
-	z-index: 100;
-}
-
-.movie-info__image {
-	width: 100%;
-	border-radius: 50px 50px 0px 0px;
-	margin-bottom: 20px;
-}
-
-.movie-info__image-container {
-	max-width: 100%;
-}
-
-.movie-info__go-back {
-	position: absolute;
-	right: 20px;
-	top: 15px;
-	width: 10%;
-}
-
-.movie-info__container {
-	display: none;
-}
-
-.movie-info__featured > .light-red {
-	position: absolute;
-	right: 2rem;
-	margin-top: 2.5rem;
-}
-
-.movie-info__price > h5 {
-	display: inline-block;
-}
-
-.movie-info__container > h2,
-.movie-info__container > h3,
-.movie-info__container > h4,
-.movie-info__container > h5 {
-	color: white;
-}
-
-.movie-info__title {
-	font-size: 2.4rem;
-}
-
-.movie-info__creator {
-	font-size: 1.2rem;
-	margin-bottom: 30px;
-}
-
-.movie-info__year {
-	display: inline;
-	margin-right: 20px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 0.8rem;
-}
-
-.movie-info__category {
-	display: inline;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 0.8rem;
-}
-
-.movie-info__viewer-count {
-	display: inline;
-	margin-left: 5px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 0.8rem;
-	font-weight: normal;
-	position: static;
-	padding-left: 0px;
-	cursor: default;
-}
-
-.movie-info__viewer-count-icon {
-	position: relative;
-	left: 130px;
-	margin-top: 0px;
-}
-
-.movie-info__text {
-	position: relative;
-	left: -130px;
-	color: white;
-	width: 90%;
-	margin-top: 10px;
-	margin-bottom: -20px;
-	font-size: 0.8rem;
-	line-height: 1.4;
-}
-
-.movie-info__price {
-	position: relative;
-	color: white;
-	bottom: 50px;
-	left: 50px;
-}
-
-.movie-info__price > h5 {
-	font-size: 2.4rem;
-	font-weight: 500;
-}
-
-.movie-info__help {
-	position: relative;
-	left: 59px;
-	top: 34px;
-}
-*/
-
 /* WHO ARE YOU-PAGE */
 
 .overlay-box__whoareyou {
@@ -940,6 +850,22 @@ footer > nav li {
 
 #new {
 	margin: auto;
+}
+
+.new-films:hover {
+	animation: zoom-in 1s ease;
+}
+
+@keyframes zoom-in {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.04);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .movie-news {
@@ -1626,6 +1552,26 @@ input[type='checkbox'] + label {
 	margin: auto;
 }
 
+#views:hover,
+#likes:hover,
+#comments:hover {
+	opacity: 0.7;
+	cursor: pointer;
+	animation: settings-zoom-in 1s ease;
+}
+
+@keyframes settings-zoom-in {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 #views {
 	padding-top: 10px;
 }
@@ -1642,8 +1588,9 @@ input[type='checkbox'] + label {
 
 .setting-icon {
 	display: block;
-	width: 35px;
-	margin-bottom: 10px;
+	max-width: 2rem;
+	padding-bottom: 1rem;
+	margin: auto;
 }
 
 .prod-profile,
@@ -1868,7 +1815,8 @@ input[type='checkbox'] + label {
 	margin-bottom: 40px;
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
-	grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1.2fr 1fr 1fr;
 }
 
 .view-profile > ul {
@@ -1898,6 +1846,7 @@ input[type='checkbox'] + label {
 	margin-top: 60px;
 	padding: 10%;
 	grid-column: 1/2;
+	grid-row: 1/3;
 	border-radius: 50px 50px 10px 50px !important;
 }
 
@@ -1932,8 +1881,9 @@ input[type='checkbox'] + label {
 
 .view-mylibrary {
 	margin-top: 180px;
-	padding: 30px;
+	padding: 10%;
 	grid-column: 2/3;
+	grid-row: 1/3;
 }
 
 .view-mylibrary > #pop-2,
@@ -1944,8 +1894,9 @@ input[type='checkbox'] + label {
 
 .view-likedmovies {
 	margin-top: 180px;
-	padding: 30px;
+	padding: 10%;
 	grid-column: 3/4;
+	grid-row: 1/2;
 }
 
 .view-likedmovies > #new-4,
@@ -1985,9 +1936,9 @@ input[type='checkbox'] + label {
 }
 
 .view-discussion {
-	margin-top: 180px;
 	padding: 30px;
-	grid-column: 4/5;
+	grid-column: 3/3;
+	grid-row: 2/3;
 }
 
 .view-discussion > p {
@@ -2290,19 +2241,19 @@ submit:hover {
 
 	.view-mylibrary {
 		grid-column: 1/5;
-		grid-row: 3/4;
+		grid-row: 2/3;
 		margin-top: 7px;
 	}
 
 	.view-likedmovies {
 		grid-column: 1/5;
-		grid-row: 4/5;
+		grid-row: 3/4;
 		margin-top: 7px;
 	}
 
 	.view-discussion {
 		grid-column: 1/5;
-		grid-row: 5/6;
+		grid-row: 4/5;
 		margin-top: 7px;
 	}
 
@@ -2377,11 +2328,6 @@ submit:hover {
 		position: relative;
 		top: 1rem;
 		left: 2rem;
-	}
-
-	.movie-page__background .icon__search {
-		right: 2.5rem;
-		top: 2.8rem;
 	}
 
 	.overlay-box__signup {
@@ -2516,19 +2462,6 @@ submit:hover {
 		display: grid;
 		grid-template-areas: 1fr;
 		grid-template-areas: 'watchmovie' 'watchmovie__form';
-	}
-
-	.movie-page__background .icon__search,
-	.watch .icon__search {
-		position: relative;
-		top: 14px;
-		left: 0rem;
-		display: inline-block;
-		background-image: url('/images/search-icon.png');
-		background-repeat: no-repeat;
-		width: 30px;
-		height: 30px;
-		margin-right: 2rem;
 	}
 
 	.movie-page__background #search,
