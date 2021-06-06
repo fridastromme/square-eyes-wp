@@ -115,11 +115,6 @@ header label {
 	margin-right: 0.3rem;
 }
 
-.search-hide {
-	position: absolute;
-	bottom: 1000px;
-}
-
 #search:focus {
 	outline: none;
 	background-color: #ffc3ac;
@@ -868,48 +863,6 @@ footer {
 	margin-bottom: 1rem;
 }
 
-#categories {
-	background-color: #373837;
-	box-shadow: 0px 3px 10px #373736;
-	padding: 40px;
-}
-
-#pop-1 {
-	background-image: url('/images/friends-of-the-universe-1.jpg');
-	background-size: cover;
-	width: 250px;
-	height: 179px;
-	border-radius: 5px;
-	margin: 0px;
-}
-
-#pop-2 {
-	background-image: url('/images/loss-of-robots.jpg');
-	background-size: cover;
-	width: 250px;
-	height: 179px;
-	border-radius: 5px;
-	margin: 0px;
-}
-
-#pop-3 {
-	background-image: url('/images/precious-dreams.jpg');
-	background-size: cover;
-	width: 250px;
-	height: 179px;
-	border-radius: 5px;
-	margin: 0px;
-}
-
-#pop-4 {
-	background-image: url('/images/spiders-with-a-goal.jpg');
-	background-size: cover;
-	width: 250px;
-	height: 179px;
-	border-radius: 5px;
-	margin: 0px;
-}
-
 .categories {
 	background-color: #373736;
 	padding-left: 30px;
@@ -1003,16 +956,6 @@ h5 {
 
 .categories-title__movie > h5 {
 	font-size: 0.8rem;
-}
-
-#view-all-movie2 {
-	color: white;
-	position: relative;
-	left: 1190px;
-}
-
-#view-all-movie2:hover {
-	color: #ffa987;
 }
 
 /* PAY FOR MOVIE SITE */
@@ -1292,12 +1235,6 @@ legend {
 	margin-bottom: 5px;
 }
 
-.form__signin {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .form {
 	display: block;
 	width: 100%;
@@ -1320,10 +1257,6 @@ legend {
 
 input[type='checkbox'] {
 	display: inline;
-}
-
-#create {
-	margin-left: 270px;
 }
 
 .sign-up__text {
@@ -1423,26 +1356,6 @@ input[type='checkbox'] + label {
 	margin: auto;
 }
 
-.profile-button {
-	white-space: nowrap;
-	border: 3px solid #134196;
-	background-color: #134196;
-	padding: 12px 38px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: bold;
-	border-radius: 25px;
-	cursor: pointer;
-	color: white;
-	font-size: 1rem;
-	box-shadow: 0px 3px 10px #c4c4c4;
-}
-
-.profile-button:hover {
-	border-color: #134196;
-	background-color: transparent;
-	color: #134196 !important;
-}
-
 .red {
 	border: 3px solid #d63d00;
 	background-color: #d63d00;
@@ -1460,13 +1373,6 @@ input[type='checkbox'] + label {
 .prod-profile__user > h1 {
 	margin-left: 0px;
 	font-size: 1.5rem;
-	text-align: center;
-}
-
-.prod-profile > .bluer {
-	display: block;
-	margin-top: 20px;
-	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -1665,75 +1571,9 @@ input[type='checkbox'] + label {
 	font-size: 0.9rem;
 }
 
-.prod-discussion > p {
-	font-size: 0.9rem;
-}
-
-#comment-font {
-	display: inline;
-	font-size: 0.9rem;
-}
-
 #comment-bold {
 	display: inline;
 	font-weight: bold;
-}
-
-/* heart icon in "liked movies"*/
-
-#heart {
-	position: relative;
-	top: -55px;
-	left: 7px;
-}
-
-#title-profile,
-#title-profile-2 {
-	position: relative;
-	top: 117px;
-	font-size: 1.2rem;
-	color: white;
-	padding-left: 7px;
-	text-shadow: 0px 5px 20px #000000;
-}
-
-#creator-profile,
-#creator-profile-2 {
-	position: relative;
-	top: 110px;
-	font-size: 0.8rem;
-	color: white;
-	padding-left: 7px;
-	text-shadow: 0px 5px 20px #000000;
-}
-
-#title-profile:hover,
-#creator-profile:hover,
-#title-profile-2:hover,
-#creator-profile-2:hover {
-	color: #ffa987;
-}
-
-.prod-mymovies > #pop-2,
-.prod-mymovies > #pop-1,
-.prod-mymovies > #pop-3 {
-	margin-bottom: 15px;
-}
-
-.prod-mylibrary > #new-2 {
-	margin-bottom: 15px;
-}
-
-.prod-likedmovies > #new-4 {
-	margin-bottom: 15px;
-}
-
-#upload {
-	position: relative;
-	left: 1200px;
-	top: 40px;
-	border-radius: 25px;
-	box-shadow: 0px 3px 10px #000000;
 }
 
 /* Bubbles in comment-section, profile */
@@ -1879,53 +1719,11 @@ input[type='checkbox'] + label {
 	grid-row: 1/3;
 }
 
-.view-mylibrary > #pop-2,
-.view-mylibrary > #pop-4,
-.view-mylibrary > #pop-3 {
-	margin-bottom: 15px;
-}
-
 .view-likedmovies {
 	margin-top: 180px;
 	padding: 10%;
 	grid-column: 3/4;
 	grid-row: 1/2;
-}
-
-.view-likedmovies > #new-4,
-.view-likedmovies > #new-2,
-.view-likedmovies > #new-3 {
-	margin-bottom: 15px;
-}
-
-#title-profile__hunters-2 {
-	position: relative;
-	padding-left: 12px;
-	top: 102px;
-	color: white;
-	font-size: 1.3rem;
-	text-shadow: 0px 5px 15px #000000;
-	margin-bottom: 2px;
-}
-
-#creator-profile__hunters-2 {
-	position: relative;
-	padding-left: 12px;
-	top: 102px;
-	color: white;
-	font-size: 0.8rem;
-	text-shadow: 0px 5px 15px #000000;
-}
-
-#title-profile__hunters-2:hover,
-#creator-profile__hunter-2s:hover {
-	color: #ffa987;
-}
-
-#heart__hunters {
-	position: relative;
-	top: -185px;
-	left: 7px;
 }
 
 .view-discussion {
@@ -1989,26 +1787,6 @@ input[type='checkbox'] + label {
 
 /* The rest of the movies in the Viewer-profile */
 
-.cat-profile-6 {
-	display: inline-block;
-	width: 278px;
-	height: 179px;
-	background-image: url('/images/spiders-with-a-goal.jpg');
-	background-repeat: no-repeat;
-	margin-bottom: 20px;
-	padding: 0px;
-}
-
-.cat-profile-7 {
-	display: inline-block;
-	width: 278px;
-	height: 179px;
-	background-image: url('/images/hunters-from-outer-space-1.jpg');
-	background-repeat: no-repeat;
-	margin-bottom: 20px;
-	padding: 0px;
-}
-
 #view-link {
 	color: #373837;
 	float: right;
@@ -2018,11 +1796,7 @@ input[type='checkbox'] + label {
 	color: #fead8d;
 }
 
-/* CONTACT */
-
-.contact-title {
-	text-align: center;
-}
+/* FORMS */
 
 .signup-form {
 	background-color: white;
