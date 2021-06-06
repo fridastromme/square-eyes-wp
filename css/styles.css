@@ -166,8 +166,8 @@ header label {
 /* Buttons */
 
 .button {
-	border: 3px solid #ff5d1c;
-	background-color: #ff5d1c;
+	border: 3px solid #d63d00;
+	background-color: #d63d00;
 	padding: 12px 38px;
 	color: white;
 	border-radius: 25px 25px 25px 5px;
@@ -179,9 +179,9 @@ header label {
 }
 
 .button:hover {
-	border-color: #ff5d1c;
+	border-color: #d63d00;
 	background-color: transparent;
-	color: #ff5d1c;
+	color: #d63d00;
 }
 
 .blue {
@@ -398,10 +398,13 @@ footer > nav li {
 	margin: auto;
 }
 
+.featured__section {
+	overflow: hidden;
+}
+
 .container__featured {
 	height: 100vh;
 	width: 100vw;
-	overflow: hidden;
 	cursor: pointer;
 }
 
@@ -1155,7 +1158,7 @@ input[type='number'] {
 }
 
 #playbutton:hover {
-	border-left: 65px solid #ff5d1c;
+	border-left: 65px solid #d63d00;
 }
 
 #watchlater {
@@ -1372,7 +1375,7 @@ input[type='checkbox'] + label {
 }
 
 .sign-up__terms-2 {
-	color: #ff5d1c;
+	color: #d63d00;
 }
 
 .sign-up__terms-2:hover {
@@ -1432,13 +1435,13 @@ input[type='checkbox'] + label {
 }
 
 .red {
-	border: 3px solid #ff5d1c;
-	background-color: #ff5d1c;
+	border: 3px solid #d63d00;
+	background-color: #d63d00;
 }
 
 .red:hover {
-	border-color: #ff5d1c;
-	color: #ff5d1c !important;
+	border-color: #d63d00;
+	color: #d63d00 !important;
 }
 
 .li-button {
@@ -1929,7 +1932,7 @@ input[type='checkbox'] + label {
 }
 
 #red {
-	color: #ff5d1c;
+	color: #e64607;
 	text-align: left;
 	margin-bottom: 2px;
 }
@@ -1961,7 +1964,7 @@ input[type='checkbox'] + label {
 
 .bubblered-1 {
 	display: block;
-	background-color: #ff5d1c;
+	background-color: #d63d00;
 	padding: 2px;
 	border-radius: 25px 25px 25px 5px;
 	margin-top: 10px;
@@ -1969,7 +1972,7 @@ input[type='checkbox'] + label {
 
 .bubblered-2 {
 	display: block;
-	background-color: #ff5d1c;
+	background-color: #d63d00;
 	margin-top: 15px;
 	padding: 2px;
 	border-radius: 25px 25px 5px 25px;
@@ -2036,7 +2039,7 @@ input {
 .form-error {
 	display: none;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color: #ff5d1c;
+	color: #d63d00;
 	margin-bottom: 1rem;
 }
 
@@ -2054,8 +2057,8 @@ input {
 
 .submit {
 	display: block;
-	border: 3px solid #ff5d1c;
-	background-color: #ff5d1c;
+	border: 3px solid #d63d00;
+	background-color: #d63d00;
 	padding: 12px 38px;
 	color: white;
 	border-radius: 25px;
@@ -2069,9 +2072,9 @@ input {
 }
 
 submit:hover {
-	border-color: #ff5d1c;
+	border-color: #d63d00;
 	background-color: transparent;
-	color: #ff5d1c;
+	color: #d63d00;
 }
 
 .submit-2 {
@@ -2137,6 +2140,15 @@ submit:hover {
 		right: 2rem;
 		bottom: 1.5rem;
 		padding: 0.5rem 1rem 0.5rem 1rem;
+	}
+
+	#presentation {
+		background-size: 400%;
+	}
+
+	#presentation__text {
+		width: 60%;
+		float: none;
 	}
 
 	.new,
@@ -2417,7 +2429,7 @@ submit:hover {
 	}
 
 	#presentation {
-		background-size: 900%;
+		background-size: 600%;
 	}
 
 	#presentation__text {
@@ -2436,6 +2448,11 @@ submit:hover {
 
 	.footer-group {
 		display: block;
+		margin: auto;
+	}
+
+	.footer-group:last-child {
+		max-width: 300px;
 		margin: auto;
 	}
 

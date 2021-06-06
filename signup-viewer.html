@@ -12,14 +12,15 @@
 		<link href="css/styles.css" rel="stylesheet" />
 	</head>
 	<body id="createview">
-		<header class="sign-up__header">
+		<header class="sign-up__header" role="navigation" aria-label="Header menu">
+			<div class="skip"><a href="#skip-here">Skip to Main Content</a></div>
 			<a href="index.html"
 				><img alt="Website logo" class="logo" src="images/logo-white.png"
 			/></a>
 		</header>
-		<div class="white-box">
-			<div class="sign-up__back">
-				<a class="back" href="javascript:history.back()">Go back</a>
+		<div class="white-box" id="skip-here">
+			<div class="sign-up__back" role="navigation" aria-label="Go back">
+				<a class="back" href="javascript:history.back() ">Go back</a>
 			</div>
 			<div class="sign-up__icon-2"></div>
 			<main class="signup-form">
@@ -31,7 +32,7 @@
 					</p>
 				</div>
 				<div>
-					<label>Your e-mail</label>
+					<label for="email">Your e-mail</label>
 					<p class="form-comment">Required</p>
 					<input id="email" name="email" type="email" />
 					<div class="form-error" id="emailError">
@@ -39,7 +40,7 @@
 					</div>
 				</div>
 				<div>
-					<label>Your password</label>
+					<label for="password">Your password</label>
 					<p class="form-comment">
 						Minimum 8 characters, at least one upper case letter and one number.
 					</p>
@@ -49,7 +50,7 @@
 					</div>
 				</div>
 				<div>
-					<label>Re-enter your password</label>
+					<label for="password__reenter">Re-enter your password</label>
 					<input id="password__reenter" name="password" type="password" />
 					<div class="form-error" id="password__reenter-error">
 						Please re-enter a matching password.
