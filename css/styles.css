@@ -1129,6 +1129,7 @@ input[type='number'] {
 #watchlater__link {
 	white-space: nowrap;
 	margin-top: 0rem;
+	margin-left: 1rem;
 }
 
 .watch {
